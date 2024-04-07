@@ -1,0 +1,6 @@
+requests
+requests-cache
+bs4
+python-dotenv
+python-telegram-bot
+psycopg2
