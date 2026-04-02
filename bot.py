@@ -41,7 +41,7 @@ async def message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         [[
           InlineKeyboardButton(
             text=station.name,
-            web_app=WebAppInfo(f"https://rfi-monitor-webapp.web.app/monitor.html?station={station._id}&direction={'departures' if session.request_departures else 'arrivals'}")
+            web_app=WebAppInfo(f"https://moritz.dododevs.it/rfimon/?station={station._id}&direction={'departures' if session.request_departures else 'arrivals'}")
           )
         ] for station in results]
       )
